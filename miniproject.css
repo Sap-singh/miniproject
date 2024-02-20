@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background: url("camera.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+ .main .btn1 i {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 16px;
+    font-weight: 700;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.sidebar_menu {
+    left: -300px;
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
+}
+.sidebar_menu .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+    height: 60px;
+}
+
+.sidebar_menu .logo a {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    left: 25%;
+    text-decoration: none;
+
+}
+
+.sidebar_menu .btn2 label {
+    color: gray;
+    font-size: 25px;
+    position: absolute;
+    left: 270px;
+    font-weight: 400;
+    line-height: 60px;
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.4s linear;
+
+}
+
+.sidebar_menu .menu {
+   position: absolute;
+   width: 100%;
+   top:80px
+}
+
+.sidebar_menu .menu li {
+    margin: 6px;
+    padding: 14px 20px;
+    color: white;
+}
+
+.sidebar_menu .menu li i {
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sidebar_menu .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social ul {
+    position: absolute;
+    left:30%; 
+    bottom: 50px; 
+   
+}
+
+.social ul i{
+    color: white;
+    opacity: 0.5; 
+    padding: 0 5px; 
+}
+
+#check {
+    display: none;
+}
+
+.main .btn1 i:hover {
+    font-size: 40px;
+
+}
+
+
+.sidebar_menu .btn2 label:hover {
+    font-size: 30px;
+}
+
+.social ul i:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+#check:checked ~ .sidebar_menu {
+    left:0px;
+}
+
+#check:checked ~ .btn1 i{
+    opacity: 0;
+}
+
+.sidebar_menu .menu li:hover{
+    box-shadow:0 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width:400px){
+   div .main {
+    background-color: white;
+    }
+}
